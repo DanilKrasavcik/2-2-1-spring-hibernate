@@ -38,6 +38,10 @@ public class User {
       this.empCar = car;
    }
 
+   public Car getCar() {
+      return empCar;
+   }
+
    public Long getId() {
       return id;
    }

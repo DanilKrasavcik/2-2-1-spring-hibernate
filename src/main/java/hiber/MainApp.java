@@ -35,8 +35,13 @@ public class MainApp {
          System.out.println();
       }
 
-    /*  System.out.println(userService.getUserByCar(car1.getModel(), car1.getSeries()));
-      System.out.println(userService.getUserByCar("Tore", 2));*/
+      User user = userService.getUser("Toreto",4);
+      System.out.println("Id = " + user.getId());
+      System.out.println("First Name = " + user.getFirstName());
+      System.out.println("Last Name = " + user.getLastName());
+      System.out.println("Email = " + user.getEmail());
+      System.out.println("Car = " + user.getCar());
+      System.out.println();
 
       context.close();
    }
